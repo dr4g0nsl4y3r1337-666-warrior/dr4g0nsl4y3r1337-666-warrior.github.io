@@ -1,0 +1,399 @@
+body{
+    background-image: url("../Images/footer_lodyas.png");
+    background-repeat: repeat;
+}
+
+li{
+}
+
+#mainContainer{
+    position: relative;
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 0.1%;
+    background-color: white;
+    opacity: 1;
+    box-shadow: 0px 0px 100px 0px black;
+    border: none;
+    z-index: 1; 
+}
+
+.object{
+    position: relative;
+    width: 50%;
+    margin-top: 2%;
+    height: 37rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#imgBigTitle{
+    text-align: center;
+    background-color: black;
+    border:0.3rem solid black;
+    margin-top: -1%;
+    color: white;
+    width: 100%;
+    top: 0rem;
+    z-index: 10;
+}
+
+#chokladbollar{
+    position: relative;
+    display: block;
+    opacity: 1;
+    top: 0%;
+    margin-top: -5%;
+    width: 100%;
+    border:0.3rem solid black;
+    box-shadow: 0px 0px 50px black;
+    z-index: 5;
+    -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+#chokladbollar:hover { 
+    -webkit-filter: grayscale(100%);
+    -webkit-transform: rotate(-5deg);
+     -moz-transform: rotate(-5deg);
+       -o-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+ a:link, :visited, :hover, :active  {
+     color:#000;
+     text-decoration: none;
+}
+
+#imgText{
+    display: block;
+    background-color: white;
+    width: 100%; 
+    opacity: 0;
+    padding-top: 10%;
+    padding-bottom: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: -10.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border:0.1rem solid black;
+    z-index: -1;
+     -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+#chokladbollar:hover + #imgText{  
+    -webkit-transform: translate(0px,9em);
+     -moz-transform: translate(0px,9em);
+       -o-transform: translate(0px,9em);
+      -ms-transform: translate(0px,9em);
+          transform: translate(0px,9em);
+     box-shadow: 0px 0px 50px black;
+    opacity: 1;
+}
+
+#imgTitle{
+    text-align: center;
+}
+
+#footer{ 
+    margin-left: 15%;
+    margin-right: 15%;        
+    box-shadow: 0px 0px 100px black;
+    color: white;
+    background-color: black;
+    border: none;
+    text-align: center;
+    z-index: 11;
+}
+
+#mainContainer #recipe{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+#back{
+    position: absolute;
+    width: 5%;
+    margin-left: -11%;
+    margin-top: -2%;
+}
+
+#back:hover{  
+     -webkit-filter: grayscale(100%);
+}
+#recipe #recipeImg{
+    border:0.3rem solid black;
+    width: 40%;
+    margin-bottom: 1%;
+    box-shadow: 0px 0px 40px 0px black;
+    -webkit-transform: rotate(-5deg);
+     -moz-transform: rotate(-5deg);
+       -o-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+#recipe #aboutIt{
+    font-size: 100%;
+    font-style: normal;
+    font-family: "Times New Roman", Times, serif;
+    float: right;
+    width: 40%;
+    min-width: 15rem;
+    max-height: 10rem;
+    margin-top: -40%;
+    margin-left: 60%;
+    margin-bottom: 2%;
+}
+
+#recipe #ingrediets{
+}
+
+#recipe #howTo{
+    margin-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+
+.star{
+    width: 8%;
+    -webkit-filter: grayscale(100%); 
+    float: left;
+}
+
+#votes{
+    padding-left: 30%;
+    margin-bottom: 0%;
+    padding-top: 2%;
+}
+#rating{
+    margin-top: 1%;
+    margin-bottom: 0%;
+}
+#loading{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    z-index: 11;
+    
+}
+
+
+/*====================================== MOBIL SKÄRM ===================================*/
+
+@media screen and (max-width:500px) {
+      
+    body{
+    }
+
+    li{
+        margin-top: 2%;
+    }
+    
+    input{
+        width: 50%;
+    }
+    
+    #mainContainer{
+        position: relative;
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-top: 0%;
+        min-width: 0px;
+        width: 100%;
+        background-color: white;
+        opacity: 1;
+        border: none;
+        min-width: 0px;;
+        box-shadow: 0px 0px 0px 0px black;
+        z-index: 1;
+    }
+    
+    .object{
+        width: 100%;
+        height: auto;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #imgBigTitle{
+        text-align: center;
+        background-color: black;
+        border:0.0rem solid white;
+        margin-top: -1%;
+        color: white;
+        width: 100%;
+        top: 0rem;
+        z-index: 10;
+    }
+    
+    #chokladbollar{
+        position: relative;
+        display: block;
+        opacity: 1;
+        top: 0%;
+        margin-top: -5%;
+        width: 100%;
+        border:0rem solid black;
+        box-shadow: 0px 0px 50px black;
+        z-index: 5;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    #chokladbollar:hover { 
+        -webkit-filter: grayscale(100%);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    #imgText:link, :visited, :hover, :active  {
+        color:#000;
+        text-decoration: none;
+    }
+
+    #imgText{
+        display: block;
+        background-color: white;
+        width: 98%; 
+        opacity: 1;
+        padding-top: 5%;
+        padding-bottom: 2%;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-top: 0rem;
+        margin-left: 1%;
+        margin-right: 1%;
+        border:0rem solid black;
+        z-index: -1;
+        -webkit-transition: all 0s ease;
+        -moz-transition: all 0s ease;
+        -o-transition: all 0s ease;
+        -ms-transition: all 0s ease;
+        transition: all 0s ease;
+    }
+
+    #chokladbollar:hover + #imgText{  
+        -webkit-transform: translate(0px,0em);
+        -moz-transform: translate(0px,0em);
+        -o-transform: translate(0px,0em);
+        -ms-transform: translate(0px,0em);
+        transform: translate(0px,0em);
+        box-shadow: 0px 0px 50px black;
+        opacity: 1;
+    }
+
+    #imgTitle{
+        text-align: center;
+    }
+    
+    #footer{ 
+        margin-left: 0%;
+        margin-right: 0%;        
+        min-width: 0rem;
+        box-shadow: 0px 0px 0px black;
+        color: white;
+        background-color: black;
+        border: none;
+        text-align: center;
+        z-index: 11;
+    }
+
+    #mainContainer #recipe{
+        background-color: white;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 0%;
+    }
+    #recipe #border{
+        background-color: black;
+        padding: 1% 1% 1% 1%; 
+    }
+    #border #recipeImg{
+        border:0rem solid black;
+        width: 100%;
+        margin-bottom: 0%;
+        box-shadow: 0px 0px 40px 0px black;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    #recipe #aboutIt{ 
+        float: none;
+        position: relative;
+        width: 100%;
+        min-width: 0px;
+        max-height: 100%;;
+        margin-top: 0%;
+        margin-left: 0%;
+        padding-bottom: 3%;
+    }
+    
+    #recipe #ingrediets{
+        margin-top: 3%;
+        padding-bottom: 3%;
+    }
+    
+    #recipe #howTo{
+        margin-top: 3%;
+        padding-bottom: 3%;
+    }
+    #hLine{
+        display: none;
+    }
+    #loading{
+    display: block;
+    position: absolute;
+    width: 15%;
+    padding-left: 42.5%;
+    padding-right: 42.5%;
+    padding-bottom: 2%;
+    z-index: 11;
+    
+}
+    
+}
+
+@media (max-width:1050px) and (min-width:500px) {
+ 
+     #recipe #aboutIt{ 
+        align-content: center;
+        float: none;
+        position: relative;
+        width: 100%;
+        min-width: 0px;
+        max-height: 100%;;
+        margin-top: 0%;
+        margin-left: 0%;
+        padding-bottom: 3%;
+    }
+    
+}
+

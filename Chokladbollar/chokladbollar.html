@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../StyleSheets/main.css">
+    <title>IN PROGRESS</title>
+</head>
+<body onload="afterLoad()">
+    <div id = "mainContainer">
+        <div id="recipe">
+            <div id="border">
+                <a href="../index.html">
+                <img id="back" src="../Images/Pil.png" alt="Tillbaka">
+                </a>
+                <img id="recipeImg" src="../Images/chokladbollar.jpg" alt="Chokladbollar">
+            </div>
+            <hr id="hLine">
+                <div id="aboutIt">
+                    <img id="loading" src="../Images/ajax-loader%20(1).gif" alt="Laddar">
+                    <div id="ratingContainer">
+                        <img id="star1" class="star" src="../Images/star.png" alt="Rösta på en stjärna">
+                        <img id="star2" class="star" src="../Images/star.png" alt="Rösta på två stjärnor">
+                        <img id="star3" class="star" src="../Images/star.png" alt="Rösta på tre stjärnor">
+                        <img id="star4" class="star" src="../Images/star.png" alt="Rösta på fyra stjärnor">
+                        <img id="star5" class="star" src="../Images/star.png" alt="Rösta på fem stjärnor">
+                        <h4 id="votes"></h4>
+                    </div>
+                    <p id="rating"></p>
+                <h1>Chokladbollar</h1>
+                <p>                
+                    Dessa chokladbollar får en liten karamellsmak av att smöret först får puttra. Rulla chokladbollarna i kokos eller pärlsocker, det som du själv föredrar.
+
+                    Detta är ett recept från Buffé nr 9, 2001.
+                </p>
+            </div>
+            <form onclick="changePortions();fadeFunction();">
+                <input id="one" type="radio" name="portions" value="10"> 10 portioner
+                <input id="two" type="radio" name="portions" value="20"> 20 portioner
+                <input id="three" type="radio" name="portions" value="30"> 30 portioner
+                <input id="four" type="radio" name="portions" value="40"> 40 portioner
+                <input id="five" type="radio" name="portions" value="50"> 50 portioner
+            </form>
+            <p id="result"></p>
+            <div id="ingrediets">
+                <h3>Ingedienser</h3>
+                <ul>
+                    <li id="butter">100 g smör</li>
+                    <li id="sugar">1 dl socker</li>
+                    <li id="vanillaSugar">1 msk vaniljsocker</li>
+                    <li id="cocoa">3 msk kakao</li>
+                    <li id="rolledOats">3 dl havregryn</li>
+                    <li id="coffee">3 msk kallt starkt kaffe</li>
+                    <li>pärlsocker eller annan garnering</li>
+                </ul> 
+            </div>
+            <div id="howTo">
+                <h3>Gör så här</h3>
+                <ol>
+                    <li>Smält smöret och låt puttra en kort stund.</li>
+                    <li>Rör ihop socker, vaniljsocker, kakao, havregryn, kaffe och smöret. Ställ in i kylskåp så att smeten stelnar lite, ca 1 timme.</li>
+                    <li>Forma bollar. Rulla i pärlsocker (gärna mångfärgat), kokos eller annan garnering. Servera till kaffet.</li>
+                
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div id = "footer">
+        <footer>
+            <p>
+                Jonas Malik
+            </p>
+        </footer>
+    </div>
+    
+    
+    <!--Scripts-->
+    <script src="../JavaScript/myJavaScript.js"></script>
+    <script src="../JavaScript/jquery-1.12.1.min.js"></script>
+    <script src="../JavaScript/myFadeFunction.js"></script>        
+    <script src="../JavaScript/rating.js"></script>
+</body>
+
+</html>

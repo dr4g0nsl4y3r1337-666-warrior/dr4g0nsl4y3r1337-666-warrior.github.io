@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../StyleSheets/main.css">
+    <title>Äppelpaj</title>
+</head>
+<body onload="afterLoad()">
+    <div id = "mainContainer">
+        <div id="recipe">
+            <div id="border">
+                <a href="../index.html">
+                <img id="back" src="../Images/Pil.png" alt="Tillbaka">
+                </a>
+                <img id="recipeImg" src="../Images/chokladbollar.jpg" alt="Chokladbollar">
+            </div>
+            <hr id="hLine">
+                <div id="aboutIt">
+                    <img id="loading" src="../Images/ajax-loader%20(1).gif" alt="Laddar">
+                    <div id="ratingContainer">
+                        <img id="star1" class="star" src="../Images/star.png" alt="Rösta på en stjärna">
+                        <img id="star2" class="star" src="../Images/star.png" alt="Rösta på två stjärnor">
+                        <img id="star3" class="star" src="../Images/star.png" alt="Rösta på tre stjärnor">
+                        <img id="star4" class="star" src="../Images/star.png" alt="Rösta på fyra stjärnor">
+                        <img id="star5" class="star" src="../Images/star.png" alt="Rösta på fem stjärnor">
+                        <h4 id="votes"></h4>
+                    </div>
+                    <p id="rating"></p>
+                <h1>Amerikansk Äppelpaj</h1>
+                <p>                
+                    Ända sedan den ikoniska 1999 filmen " American Pie " vi har behandlat detta recept som den ultimata söta symbol för USA . Smält med en annan amerikansk klassisk ... blueberry pie vi är säker på att du kommer att förälska sig i detta !
+                </p>
+            </div>
+            <form onclick="changePortions();fadeFunction();">
+                <input id="one" type="radio" name="portions" value="10"> 10 portioner
+                <input id="two" type="radio" name="portions" value="20"> 20 portioner
+                <input id="three" type="radio" name="portions" value="30"> 30 portioner
+                <input id="four" type="radio" name="portions" value="40"> 40 portioner
+                <input id="five" type="radio" name="portions" value="50"> 50 portioner
+            </form>
+            <p id="result"></p>
+            <div id="ingrediets">
+                <h3>Ingedienser</h3>
+                <ul>
+                    <li >500 g plain flour</li>
+                    <li>250 g cold, cubed butter</li>
+                    <li>180 g caster sugar</li>
+                    <li>2 large eggs</li>
+                    
+                    <li>1.5 kg granny smith apples</li>
+                    <li>150 g caster sugar</li>
+                    <li>a handful of blueberries</li>
+                    <li>1 tsp cinnamon</li>
+                    <li>a few shots of apple juice</li>
+                    <li>a handful of caster sugar</li>
+                    
+                    <li>1 egg white</li>
+                    <li>20 g caster sugar</li>
+                    
+                </ul> 
+            </div>
+            <div id="howTo">
+                <h3>Gör så här</h3>
+                <ol>
+                    <p>Gnid kubik smöret i mjölet tills blandningen liknar brödsmulor . Rör genom sockret och uppvispat ägg . Knåda försiktigt och kortfattat bara tills det hela bildar en mjuk deg boll - inte överansträngning annars bakverk kommer att bli tufft när kokta . Svep in degen i plastfolie och kyla i kylen i minst en timme för att koppla av . Rulla den avslappnade degen på en lätt mjölad yta till tjockleken på 1 cm . Låg över en tårta fallet och tryck försiktigt in kanterna , trimma bort någon överdriven bakverk sedan kyla igen i 15 minuter som du förvärma en ugn till 190 ° C .</p>
+                    
+                    <p>Skala och skär äpplena i tjocka skivor , uppspänning dem i en skål . Kasta socker, kanel och blåbär i med äpplet och blanda tillsammans med en bra pressad äppeljuice . Tips äpplet blandningen i den kylda tårta skal .</p>
+                    
+                    <p>Brush the top of the sides of the tart shell. Roll another circle of dough that is slightly bigger than the tart case and drape it over the apples. Make a lattice if you prefer. Trim the lid to fit the tart, then pinch the lid into the brushed sides of the tart shell with fingers or a fork. Poke a few slits into the middle of the lid to allow steam to escape the pie. Brush the egg white over the pie lid then sprinkle with caster sugar.</p>
+                    
+                    <p>Placera kakan i ugnen i 50 minuter . Låt svalna något , ta bort från formen och sedan tjäna kilar av paj med vaniljglass .</p>
+                       
+                
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div id = "footer">
+        <footer>
+            <p>
+                Henrik Chianga
+            </p>
+        </footer>
+    </div>
+    
+    
+    <!--Scripts-->
+    <script src="../JavaScript/myJavaScript.js"></script>
+    <script src="../JavaScript/jquery-1.12.1.min.js"></script>
+    <script src="../JavaScript/myFadeFunction.js"></script>        
+    <script src="../JavaScript/rating.js"></script>
+</body>
+
+</html>

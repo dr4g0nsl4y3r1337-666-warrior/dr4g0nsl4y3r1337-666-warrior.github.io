@@ -1,9 +1,19 @@
+h2{
+    font-size: 40px;
+}
 #topMenu{
+    position: fixed;
+    top:0px;
+    width: 70%;
+    z-index:100;
     list-style-type: none;
     margin: 0;
+    margin-left: 15%;
+    margin-right: 15%;
     padding: 0;
     overflow: hidden;
     background-color: darkred;
+    box-shadow: 0px 1px 5px 0px black;
 }
 
 header li{
@@ -25,15 +35,15 @@ header li a:hover {
 
 }
 
-#topMenu{
-    position: fixed;
-    top:0px;
-    width: 100%;
-    z-index:100;
+header li a.active {
+    background-color: red;
+    color: white;
+    box-shadow: 0px 0px 5px 0px black;
 }
 
 #mainContainer{
-    margin-top: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 .slider{
@@ -43,4 +53,21 @@ header li a:hover {
     margin-right: auto;
     margin-top: 1%;
     padding-bottom: 1%;
+}
+
+#advice{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 100px;
+
+}
+
+#advice ul{
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+#advice ul li{
+    padding-bottom: 7px;
+    font-size: 20px;
 }

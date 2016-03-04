@@ -6,12 +6,13 @@
         <link rel="stylesheet" type="text/css" href="StyleSheets/reset.css">
         <link rel="stylesheet" type="text/css" href="StyleSheets/main.css">
         <link rel="stylesheet" type="text/css" href="StyleSheets/homePage.css">
+        <link rel="stylesheet" type="text/css" href="StyleSheets/flexslider.css" media="screen" />
 
         <title>IN PROGRESS</title>
     </head>
     <body>
-        <header id="topMenu">
-            <ul>
+        <header>
+            <ul id="topMenu">
                 <li><a href="index.html">Hem</a></li>
                 <li><a href="#news">Yummies</a></li>
                 <li><a href="#contact">Dagens recept</a></li>
@@ -20,21 +21,24 @@
             </ul>
         </header>
         <div id = "mainContainer">   
-Wolof
-吴语
-Xitsonga
-ייִדיש
-Yorùbá
-粵語
-Zazaki
-Zeêuws
-Žemaitėška
-中文
-Адыгабзэ
-मैथिली
-Тыва дыл
-Redigera länkar
-Wikipedias text är tillgänglig under licensen Creative Commons Erkännande-dela-lika
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/äppelpaj.png" />
+                        </li>
+                        <li>
+                            <img src="images/chokladbollar.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/kanelbullar.jpg" />
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
         <div id = "footer">
             <footer>
@@ -43,5 +47,10 @@ Wikipedias text är tillgänglig under licensen Creative Commons Erkännande-del
                 </p>
             </footer>
         </div>
+         <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <!-- FlexSlider -->
+        <script defer src="JavaScript/jquery.flexslider.js"></script>
+        <script defer src="JavaScript/myFlexSlider.js"></script>
     </body>
 </html>

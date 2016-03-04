@@ -1,4 +1,4 @@
-ul{
+#topMenu{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -6,11 +6,11 @@ ul{
     background-color: darkred;
 }
 
-li{
+header li{
     float: left;
 }
 
-li a {
+header li a {
     display: block;
     color: white;
     text-align: center;
@@ -18,7 +18,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+header li a:hover {
     background-color: red;
     color: white;
     box-shadow: 0px 0px 5px 0px black;
@@ -34,4 +34,13 @@ li a:hover {
 
 #mainContainer{
     margin-top: 4rem;
+}
+
+.slider{
+    width: 80%;
+    max-height 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    padding-bottom: 1%;
 }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../StyleSheets/main.css">
+    <title>IN PROGRESS</title>
+</head>
+<body onload="afterLoad()">
+    <div id = "mainContainer">
+        <div id="recipe">
+            <div id="border">
+                <a href="../index.html">
+                <img id="back" src="../Images/Pil.png" alt="Tillbaka">
+                </a>
+                <img id="recipeImg" src="../Images/ProPancacke.jpg" alt="ProteinPannkaka">
+            </div>
+            <hr id="hLine">
+                <div id="aboutIt">
+                    <img id="loading" src="../Images/ajax-loader%20(1).gif" alt="Laddar">
+                    <div id="ratingContainer">
+                        <img id="star1" class="star" src="../Images/star.png" alt="Rösta på en stjärna">
+                        <img id="star2" class="star" src="../Images/star.png" alt="Rösta på två stjärnor">
+                        <img id="star3" class="star" src="../Images/star.png" alt="Rösta på tre stjärnor">
+                        <img id="star4" class="star" src="../Images/star.png" alt="Rösta på fyra stjärnor">
+                        <img id="star5" class="star" src="../Images/star.png" alt="Rösta på fem stjärnor">
+                        <h4 id="votes"></h4>
+                    </div>
+                    <p id="rating"></p>
+                <h1>Protein Pannkakor</h1>
+                <p>                
+                    De här pannkakorna (med topping) innehåller hela 38 g protein utan ett endaste gram proteinpulver.
+
+                    Detta är ett recept från Tasty Health, 2013.
+                </p>
+            </div>
+            <form onclick="changePortions();fadeFunction();">
+                <input id="one" type="radio" name="portions" value="1"> 1 portioner
+                <input id="two" type="radio" name="portions" value="2"> 2 portioner
+                <input id="three" type="radio" name="portions" value="3"> 3 portioner
+                <input id="four" type="radio" name="portions" value="4"> 4 portioner
+                <input id="five" type="radio" name="portions" value="5"> 5 portioner
+            </form>
+            <p id="result"></p>
+            <div id="ingrediets">
+                <h3>Ingedienser</h3>
+                <ul>
+                    <li>1 dl havregryn</li>
+                    <li>0.5 msk kokosmjöl</li>
+                    <li>1 msk stevia strö</li>
+                    <li>1 tsk bakpulver</li>
+                    <li>1 helt ägg</li>
+                    <li>0.5 dl (50g) minikeso</li>
+                    <li>10 blåbär</li>
+                    <li>3 jordgubbar, i mindre bitar</li>
+                </ul> 
+                <p id="result"></p>
+            <div id="ingrediets">
+                <h3>Ingedienser till vaniljkräm.</h3>
+                <ul>
+                <li>100 g lättkesella</li>
+                <li>0.5 tsk vaniljarom</li>
+                <li>0.5 msk stevia strö</li>
+                </ul> 
+                        
+            </div>
+            <div id="howTo">
+                <h3>Gör så här</h3>
+                <ol>
+                    <li>Blanda ihop alla ingredienser urom bären till pannkakorna med en stavmixer så du får en slät smet. Lägg i bären.</li>
+                    <li>Stek på medelhög värme i en stekpanna (i like kokosolja om du inte har en bra stekpanna), ca 1 minut per sida.</li>
+                    <li>Blanda ihop ingredeinserna till vaniljkrämen.</li>
+                    <li>Servera pannkakorna med vaniljkrämen och ringla över lite Walden Farms pannkakssirap eller lite honung.</li>
+                
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div id = "footer">
+        <footer>
+            <p>
+                Juan Fernandez
+            </p>
+        </footer>
+    </div>
+    
+    
+    <!--Scripts-->
+    <script src="../JavaScript/myJavaScript.js"></script>
+    <script src="../JavaScript/jquery-1.12.1.min.js"></script>
+    <script src="../JavaScript/myFadeFunction.js"></script>        
+    <script src="../JavaScript/rating.js"></script>
+</body>
+
+</html>

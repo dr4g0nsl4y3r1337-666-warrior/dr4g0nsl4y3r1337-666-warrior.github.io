@@ -33,32 +33,32 @@
                 </p>
             </div>
             <form onclick="changePortions();fadeFunction();">
-                <input id="one" type="radio" name="portions" value="10"> 10 portioner
-                <input id="two" type="radio" name="portions" value="20"> 20 portioner
-                <input id="three" type="radio" name="portions" value="30"> 30 portioner
-                <input id="four" type="radio" name="portions" value="40"> 40 portioner
-                <input id="five" type="radio" name="portions" value="50"> 50 portioner
+            <div id ="Button">
+           <button class="mybutton" type="button"   onclick="setPortionSize(1);">1</button>
+        <button class="mybutton" type="button" onclick="setPortionSize(2);">2</button>
+          <button class="mybutton" type="button" onclick="setPortionSize(3);">3</button>
+         <button class="mybutton" type="button" onclick="setPortionSize(4);">4</button>
+          <button class="mybutton" type="button" onclick="setPortionSize(5);">5</button>
             </form>
             <p id="result"></p>
             <div id="ingrediets">
                 <h3>Ingedienser</h3>
                 <ul>
-                    <li >500 g plain flour</li>
-                    <li>250 g cold, cubed butter</li>
-                    <li>180 g caster sugar</li>
-                    <li>2 large eggs</li>
-                    
-                    <li>1.5 kg granny smith apples</li>
-                    <li>150 g caster sugar</li>
-                    <li>a handful of blueberries</li>
-                    <li>1 tsp cinnamon</li>
-                    <li>a few shots of apple juice</li>
-                    <li>a handful of caster sugar</li>
-                    
-                    <li>1 egg white</li>
-                    <li>20 g caster sugar</li>
-                    
-                </ul> 
+                    <h4>Smördeg</h4>
+            <li>Vetemjöl<strong class="setSize">500</strong>g </li>
+            <li>Smör<strong class="setSize">250</strong>g </li>
+            <li>Socker<strong class="setSize">180</strong>g </li>
+            <li>Ägg<strong class="setSize">2</strong> </li>
+            <h4>Filling</h4>
+            <li>Äpple <strong class="setSize">1.5</strong>kg </li>
+            <li>Socker <strong class="setSize">150</strong> g</li>
+            <li>Handfull av Blåbär <strong class="setSize">1 </strong></li>
+            <li>Cinnamon <strong class="setSize">1</strong > tsp </li>
+            <li>A few shots of apple juice</li>
+            <li>A handful of caster sugar<strong class="setSize">1</strong></li>
+                    <h4>Bakning</h4>
+            <li>Egg white<strong class="setSize">1</strong></li>
+            <li>Caster sugar <strong class="setSize">20</strong>g </li>
             </div>
             <div id="howTo">
                 <h3>Gör så här</h3>
@@ -79,7 +79,7 @@
     <div id = "footer">
         <footer>
             <p>
-                Henrik Chianga
+                Henrik Chiang
             </p>
         </footer>
     </div>

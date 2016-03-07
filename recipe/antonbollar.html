@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../StyleSheets/main.css">
+    <title>Chokladbollar, mums!</title>
+</head>
+<body onload="afterLoad()">
+    <div id = "mainContainer">
+        <div id="recipe">
+            <div id="border">
+                <a href="../index.html">
+                <img id="back" src="../Images/Pil.png" alt="Tillbaka">
+                </a>
+                <img id="recipeImg" src="../Images/antonbollar.jpg" alt="">
+            </div>
+            <hr id="hLine">
+                <div id="aboutIt">
+                    <img id="loading" src="../Images/ajax-loader%20(1).gif" alt="Laddar">
+                    <div id="ratingContainer">
+                        <img id="star1" class="star" src="../Images/star.png" alt="Rösta på en stjärna">
+                        <img id="star2" class="star" src="../Images/star.png" alt="Rösta på två stjärnor">
+                        <img id="star3" class="star" src="../Images/star.png" alt="Rösta på tre stjärnor">
+                        <img id="star4" class="star" src="../Images/star.png" alt="Rösta på fyra stjärnor">
+                        <img id="star5" class="star" src="../Images/star.png" alt="Rösta på fem stjärnor">
+                        <h4 id="votes"></h4>
+                    </div>
+                    <p id="rating"></p>
+                <h1>Chokladbollar</h1>
+                <p>                
+				
+					Vad är godare och enklare än klassiska chokladbollar? Perfekt att ha till kalaset, fika eller härligt fredagsmys. Det går utmärkt att frysa chokladbollarna om 
+					du vill spara dom lite längre. 
+					
+					Rulla chokladbollarna i pärlsocker eller kokos om du föredrar något mindre sött. 
+                </p>
+            </div>
+            <form onclick="changePortions();fadeFunction();">
+                <input id="one" type="radio" name="portions" value="10"> 10 portioner
+                <input id="two" type="radio" name="portions" value="20"> 20 portioner
+                <input id="three" type="radio" name="portions" value="30"> 30 portioner
+                <input id="four" type="radio" name="portions" value="40"> 40 portioner
+                <input id="five" type="radio" name="portions" value="50"> 50 portioner
+            </form>
+            <p id="result"></p>
+            <div id="ingrediets">
+                <h3>Ingedienser</h3>
+                <ul>
+                  <li><span id="smor">75</span> gram lättmargarin</li>
+				  <li><span id="skr">1</span> dl socker</li>
+                  <li><span id="vanljskr">1</span> msk vaniljsocker</li>
+				  <li><span id="kakao">3</span> msk kakao</li>
+                  <li><span id="snbkafe">1</span> tsk snabbkaffe</li>
+                  <li><span id="hvrgrn">2.5</span> dl havrygryn</li>
+                  <li>Pärlsocker eller kokosflingor</li>
+                </ul> 
+            </div>
+            <div id="howTo">
+                <h3>Gör så här</h3>
+                <ol>
+                    <li>Rör margarin, socker och vaniljsocker tills det blir jämnt och vitt.</li>
+                    <li>Blanda i kakaon och kaffepulvret.</li>
+                    <li>Tillsätt havregrynen och blanda väl.</li>
+					<li>Forma till små runda bollar och rulla dem i pärlsocker eller kokosflingor.</li>
+                
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div id = "footer">
+        <footer>
+        </footer>
+    </div>
+    
+    
+    <!--Scripts-->
+    <script src="../JavaScript/myJavaScript.js"></script>
+    <script src="../JavaScript/jquery-1.12.1.min.js"></script>
+    <script src="../JavaScript/myFadeFunction.js"></script>        
+    <script src="../JavaScript/rating.js"></script>
+</body>
+
+</html>

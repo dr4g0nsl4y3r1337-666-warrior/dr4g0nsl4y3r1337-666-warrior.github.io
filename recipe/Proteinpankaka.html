@@ -27,40 +27,39 @@
                         <h4 id="votes"></h4>
                     </div>
                     <p id="rating"></p>
-                <h1>Protein Pannkakor</h1>
+                <h1>ProteinPannkakor</h1>
                 <p>                
                     De här pannkakorna (med topping) innehåller hela 38 g protein utan ett endaste gram proteinpulver.
 
                     Detta är ett recept från Tasty Health, 2013.
                 </p>
             </div>
-            <form onclick="changePortions();fadeFunction();">
-                <input id="one" type="radio" name="portions" value="1"> 1 portioner
-                <input id="two" type="radio" name="portions" value="2"> 2 portioner
-                <input id="three" type="radio" name="portions" value="3"> 3 portioner
-                <input id="four" type="radio" name="portions" value="4"> 4 portioner
-                <input id="five" type="radio" name="portions" value="5"> 5 portioner
-            </form>
+        <button class="mybutton" type="button"   onclick="setPortionSizeforJuan(1);">1</button>
+        <button class="mybutton" type="button" onclick="setPortionSizeforJuan(2);">2</button>
+          <button class="mybutton" type="button" onclick="setPortionSizeforJuan(3);">3</button>
+         <button class="mybutton" type="button" onclick="setPortionSizeforJuan(4);">4</button>
+          <button class="mybutton" type="button" onclick="setPortionSizeforJuan(5);">5</button>
             <p id="result"></p>
             <div id="ingrediets">
                 <h3>Ingedienser</h3>
                 <ul>
-                    <li>1 dl havregryn</li>
-                    <li>0.5 msk kokosmjöl</li>
-                    <li>1 msk stevia strö</li>
-                    <li>1 tsk bakpulver</li>
-                    <li>1 helt ägg</li>
-                    <li>0.5 dl (50g) minikeso</li>
-                    <li>10 blåbär</li>
-                    <li>3 jordgubbar, i mindre bitar</li>
+                    <li><strong class="setSize">1</strong> dl havregryn</li>
+                    <li><strong class="setSize">0.5</strong> msk kokosmjöl</li>
+                    <li><strong class="setSize">1</strong> msk stevia strö</li>
+                    <li><strong class="setSize">1</strong> tsk bakpulver</li>
+                    <li><strong class="setSize">1</strong> helt ägg</li>
+                    <li><strong class="setSize">2</strong> äggvitor</li>
+                    <li><strong class="setSize">0.5 </strong> dl minikeso</li>
+                    <li><strong class="setSize">10</strong> blåbär</li>
+                    <li><strong class="setSize">3</strong> jordgubbar, i mindre bitar</li>
                 </ul> 
                 <p id="result"></p>
             <div id="ingrediets">
                 <h3>Ingedienser till vaniljkräm.</h3>
                 <ul>
-                <li>100 g lättkesella</li>
-                <li>0.5 tsk vaniljarom</li>
-                <li>0.5 msk stevia strö</li>
+                    <li><strong class="setSize">100</strong> g lättkesella</li>
+                    <li><strong class="setSize">0.5</strong> tsk vaniljarom</li>
+                    <li><strong class="setSize">0.5</strong> msk stevia strö</li>
                 </ul> 
                         
             </div>
@@ -86,6 +85,7 @@
     
     
     <!--Scripts-->
+    <script src="../JavaScript/mywebfunction.js"></script>   
     <script src="../JavaScript/myJavaScript.js"></script>
     <script src="../JavaScript/jquery-1.12.1.min.js"></script>
     <script src="../JavaScript/myFadeFunction.js"></script>        

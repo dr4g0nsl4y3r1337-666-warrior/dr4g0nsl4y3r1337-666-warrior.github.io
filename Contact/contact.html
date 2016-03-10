@@ -16,14 +16,14 @@
                 <li id="mobileMenu"><a>Meny</a></li>
                 <li class="desctopMenu"><a href="../index.html">Hem</a></li>
                 <li class="desctopMenu"><a href="../yummies/yummies.html">Yummies</a></li>
-                <li class="desctopMenu"><a href="contact.html">Dagens recept</a></li>
+                <li onclick="setRandomLink();" class="desctopMenu"><a id="myRandomLink" href="#recipe">Dagens recept</a></li>
                 <li class="desctopMenu"><a href="#about">Top 5</a></li>
                 <li class="desctopMenu"><a class="active" href="contact.html">Kontakt</a></li>
             </ul>
             <ul id="mobilePopUpMenu">
                 <li><a href="../index.html">Hem</a></li>
                 <li><a href="../yummies/yummies.html">Yummies</a></li>
-                <li><a href="#contact">Dagens recept</a></li>
+                <li onclick="setRandomLink();"><a id="myRandomLink" href="#recipe">Dagens recept</a></li>
                 <li><a href="#about">Top 5</a></li>
                 <li><a class="active"  href="contact.html">Kontakt</a></li>
             </ul>
@@ -164,6 +164,7 @@
         <!-- jQuery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <script src="../JavaScript/menu.js"></script>
+        <script defer src="../JavaScript/recipeOfTheDay.js"></script>
 
     </body>
 </html>

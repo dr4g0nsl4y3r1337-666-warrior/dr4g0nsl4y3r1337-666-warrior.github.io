@@ -8,9 +8,9 @@ var file = href.substr(href.lastIndexOf('/') + 1);
 
 function setRandomLink(){
     if(file === "index.html"){
-        $("#myRandomLink").attr("href", recipesForIndexFile[rand]);
+        $(".myRandomLink").attr("href", recipesForIndexFile[rand]);
     }
     else{
-        $("#myRandomLink").attr("href", recipes[rand]);
+        $(".myRandomLink").attr("href", recipes[rand]);
     }
 };

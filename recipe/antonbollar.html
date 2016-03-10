@@ -13,57 +13,56 @@
                 <a href="../index.html">
                 <img id="back" src="../Images/Pil.png" alt="Tillbaka">
                 </a>
-                <img id="recipeImg" src="../Images/antonbollar.jpg" alt="">
+                <img id="recipeImg" src="../Images/antonbollar.jpg" alt="AntonBoll">
             </div>
             <hr id="hLine">
                 <div id="aboutIt">
                     <img id="loading" src="../Images/ajax-loader%20(1).gif" alt="Laddar">
                     <div id="ratingContainer">
-                        <img id="star1" class="star" src="../Images/star.png" alt="Rˆsta pÂ en stj‰rna">
-                        <img id="star2" class="star" src="../Images/star.png" alt="Rˆsta pÂ tvÂ stj‰rnor">
-                        <img id="star3" class="star" src="../Images/star.png" alt="Rˆsta pÂ tre stj‰rnor">
-                        <img id="star4" class="star" src="../Images/star.png" alt="Rˆsta pÂ fyra stj‰rnor">
-                        <img id="star5" class="star" src="../Images/star.png" alt="Rˆsta pÂ fem stj‰rnor">
+                        <img id="star1" class="star" src="../Images/star.png" alt="R√∂sta p√• en stj√§rna">
+                        <img id="star2" class="star" src="../Images/star.png" alt="R√∂sta p√• tv√• stj√§rnor">
+                        <img id="star3" class="star" src="../Images/star.png" alt="R√∂sta p√• tre stj√§rnor">
+                        <img id="star4" class="star" src="../Images/star.png" alt="R√∂sta p√• fyra stj√§rnor">
+                        <img id="star5" class="star" src="../Images/star.png" alt="R√∂sta p√• fem stj√§rnor">
                         <h4 id="votes"></h4>
                     </div>
                     <p id="rating"></p>
                 <h1>Chokladbollar</h1>
                 <p>                
 				
-					Vad ‰r godare och enklare ‰n klassiska chokladbollar? Perfekt att ha till kalaset, fika eller h‰rligt fredagsmys. Det gÂr utm‰rkt att frysa chokladbollarna om 
-					du vill spara dom lite l‰ngre. 
+					Vad √§r godare och enklare √§n klassiska chokladbollar? Perfekt att ha till kalaset, fika eller h√§rligt fredagsmys. 
+					Det g√•r utm√§rkt att frysa chokladbollarna om du vill spara dom lite l√§ngre
 					
-					Rulla chokladbollarna i p‰rlsocker eller kokos om du fˆredrar nÂgot mindre sˆtt. 
+					Rulla chokladbollarna i p√§rlsocker eller kokos om du f√∂redrar n√•got mindre s√∂tt. 
                 </p>
             </div>
             <form onclick="changePortions();fadeFunction();">
-                <input id="one" type="radio" name="portions" value="10"> 10 portioner
-                <input id="two" type="radio" name="portions" value="20"> 20 portioner
-                <input id="three" type="radio" name="portions" value="30"> 30 portioner
-                <input id="four" type="radio" name="portions" value="40"> 40 portioner
-                <input id="five" type="radio" name="portions" value="50"> 50 portioner
+        <button class="mybutton" type="button"   onclick="setPortionSizeforAnton(1);">10</button>
+        <button class="mybutton" type="button" onclick="setPortionSizeforAnton(2);">20</button>
+          <button class="mybutton" type="button" onclick="setPortionSizeforAnton(3);">30</button>
+         <button class="mybutton" type="button" onclick="setPortionSizeforAnton(4);">40</button>
+          <button class="mybutton" type="button" onclick="setPortionSizeforAnton(5);">50</button>
             </form>
             <p id="result"></p>
             <div id="ingrediets">
                 <h3>Ingedienser</h3>
                 <ul>
-                  <li><span id="smor">75</span> gram l‰ttmargarin</li>
-				  <li><span id="skr">1</span> dl socker</li>
-                  <li><span id="vanljskr">1</span> msk vaniljsocker</li>
-				  <li><span id="kakao">3</span> msk kakao</li>
-                  <li><span id="snbkafe">1</span> tsk snabbkaffe</li>
-                  <li><span id="hvrgrn">2.5</span> dl havrygryn</li>
-                  <li>P‰rlsocker eller kokosflingor</li>
+                  <li><strong class="setSize"> 75 </strong> gram l√§ttmargarin</li>
+                <li><strong class="setSize">1</strong> dl socker</li>
+                  <li><strong class="setSize">1</strong> msk vaniljsocker</li>
+                  <li><strong class="setSize">3</strong> msk kakao</li>
+                  <li><strong class="setSize">1</strong> tsk snabbkaffe</li>
+                  <li><strong class="setSize">2.5</strong> dl havrygryn</li>
+                  <li>P√§rlsocker eller kokosflingor</li>
                 </ul> 
             </div>
             <div id="howTo">
-                <h3>Gˆr sÂ h‰r</h3>
+                <h3>G√∂r s√• h√§r</h3>
                 <ol>
-                    <li>Rˆr margarin, socker och vaniljsocker tills det blir j‰mnt och vitt.</li>
+                    <li>R√∂r margarin, socker och vaniljsocker tills det blir j√§mnt och vitt.</li>
                     <li>Blanda i kakaon och kaffepulvret.</li>
-                    <li>Tills‰tt havregrynen och blanda v‰l.</li>
-					<li>Forma till smÂ runda bollar och rulla dem i p‰rlsocker eller kokosflingor.</li>
-                
+                    <li>Tills√§tt havregrynen och blanda v√§l.</li>
+                    <li>Forma till sm√• runda bollar och rulla dem i p√§rlsocker eller kokosflingor.</li>
                 </ol>
             </div>
         </div>
@@ -75,6 +74,7 @@
     
     
     <!--Scripts-->
+    <script src="../JavaScript/mywebfunction.js"></script>     
     <script src="../JavaScript/myJavaScript.js"></script>
     <script src="../JavaScript/jquery-1.12.1.min.js"></script>
     <script src="../JavaScript/myFadeFunction.js"></script>        

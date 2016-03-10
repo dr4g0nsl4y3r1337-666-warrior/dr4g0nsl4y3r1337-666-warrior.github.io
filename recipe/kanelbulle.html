@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../StyleSheets/main.css">
+    <title>IN PROGRESS</title>
+</head>
+<body onload="afterLoad()">
+    <div id = "mainContainer">
+        <div id="recipe">
+            <div id="border">
+                <a href="../index.html">
+                <img id="back" src="http://petitecurie.com/wp-content/uploads/2013/05/bullar_intro.jpg" alt="Tillbaka">
+                </a>
+                <img id="recipeImg" src="http://petitecurie.com/wp-content/uploads/2013/05/bullar_intro.jpg" alt="Kanelbullar">
+            </div>
+            <hr id="hLine">
+                <div id="aboutIt">
+                    <img id="loading" src="../Images/ajax-loader%20(1).gif" alt="Laddar">
+                    <div id="ratingContainer">
+                        <img id="star1" class="star" src="../Images/star.png" alt="Rösta på en stjärna">
+                        <img id="star2" class="star" src="../Images/star.png" alt="Rösta på två stjärnor">
+                        <img id="star3" class="star" src="../Images/star.png" alt="Rösta på tre stjärnor">
+                        <img id="star4" class="star" src="../Images/star.png" alt="Rösta på fyra stjärnor">
+                        <img id="star5" class="star" src="../Images/star.png" alt="Rösta på fem stjärnor">
+                        <h4 id="votes"></h4>
+                    </div>
+                    <p id="rating"></p>
+                <h1>Kanelbullar</h1>
+                <p>                
+                    Ett enkelt sätt att baka kanelbullar!
+
+                    Detta är ett recept från Ica.
+                </p>
+            </div>
+            <button class="mybutton" type="button"   onclick="setPortionSizeforChristos(1);">10</button>
+        <button class="mybutton" type="button" onclick="setPortionSizeforChristos(2);">20</button>
+          <button class="mybutton" type="button" onclick="setPortionSizeforChristos(3);">30</button>
+         <button class="mybutton" type="button" onclick="setPortionSizeforChristos(4);">40</button>
+          <button class="mybutton" type="button" onclick="setPortionSizeforChristos(5);">50</button>
+            <p id="result"></p>
+            <div id="ingrediets">
+            <p id="result"></p>
+            <div id="ingrediets">
+                <h3>Ingedienser</h3>
+                <ul>
+                    <li><strong class="setSize">150</strong> g smör</li>
+                    <li><strong class="setSize">1.5</strong> dl socker</li>
+                    <li><strong class="setSize">1</strong> tsk bakpulver</li>
+                    <li><strong class="setSize">1</strong> tsk salt</li>
+                    <li><strong class="setSize">13</strong> dl vetemjöl</li>
+                    <li><strong class="setSize">50</strong> g jäst</li>
+                    <li>pärlsocker eller annan garnering</li>
+                </ul> 
+            </div>
+            <div id="howTo">
+                <h3>Gör så här</h3>
+                <ol>
+                    <li>Smula jästen i en bunke. Smält matfettet i en kastrull eller i en skål i mikrovågsugnen på full effekt (max 800 W) ca 30 se.</li>
+                    <li>Tillsätt mjölken och värm till fingervarmt, 37°C. Häll lite av degvätskan över jästen och rör tills den löst sig.</li>
+                    <li>Tillsätt resten av degvätskan, socker, salt och nästan allt vetemjölet, spara lite till utbakningen. Arbeta degen smidig för hand eller i maskin tills degen släpper bunkens kanter. Låt degen jäsa övertäckt ca 30 min.
+</li>
+                
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div id = "footer">
+        <footer>
+            <p>
+                
+            </p>
+        </footer>
+    </div>
+    
+    
+    <!--Scripts-->
+    <script src="../JavaScript/mywebfunction.js"></script>
+    <script src="../JavaScript/myJavaScript.js"></script>
+    <script src="../JavaScript/jquery-1.12.1.min.js"></script>
+    <script src="../JavaScript/myFadeFunction.js"></script>        
+    <script src="../JavaScript/rating.js"></script>
+</body>
+
+</html>

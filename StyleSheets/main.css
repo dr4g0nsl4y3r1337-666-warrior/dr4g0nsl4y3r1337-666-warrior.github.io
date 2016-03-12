@@ -170,18 +170,18 @@ li{
 
 
 
-.starp, starab, starap, starc, stark{
+.star, starp, starab, starap, starc, stark{
     width: 8%;
     -webkit-filter: grayscale(100%); 
     float: left;
 }
 
-#votes{
+#votes, votesp, votesab, votesap, votesc, votesk{
     padding-left: 30%;
     margin-bottom: 0%;
     padding-top: 2%;
 }
-#rating{
+#rating, ratingp, ratingab, ratingap, ratingc, ratingk{
     margin-top: 1%;
     margin-bottom: 0%;
 }

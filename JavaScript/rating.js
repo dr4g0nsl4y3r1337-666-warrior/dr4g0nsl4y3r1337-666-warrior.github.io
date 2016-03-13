@@ -71,7 +71,7 @@ function votesc(i){
         
     $.ajax({
         method: "GET",
-        url:  vote+""+i,
+        url:  votec+""+i,
         success: function(data) {
             $.ajax({
                 method: "GET",
@@ -174,7 +174,7 @@ function votesab(i){
         
     $.ajax({
         method: "GET",
-        url:  vote+""+i,
+        url:  voteab+""+i,
         success: function(data) {
             $.ajax({
                 method: "GET",
@@ -236,7 +236,7 @@ $("#stark4").hover(function(){
         $("#stark3").css("-webkit-filter", "grayscale(100%)");
         $("#stark4").css("-webkit-filter", "grayscale(100%)");
     });
-$("#star5").hover(function(){
+$("#stark5").hover(function(){
         $("#stark1").css("-webkit-filter", "grayscale(0%)");
         $("#stark2").css("-webkit-filter", "grayscale(0%)");
         $("#stark3").css("-webkit-filter", "grayscale(0%)");
@@ -273,7 +273,7 @@ function votesk(i){
         
     $.ajax({
         method: "GET",
-        url:  vote+""+i,
+        url:  votek+""+i,
         success: function(data) {
             $.ajax({
                 method: "GET",
@@ -376,7 +376,7 @@ function votesap(i){
         
     $.ajax({
         method: "GET",
-        url:  vote+""+i,
+        url:  voteap+""+i,
         success: function(data) {
             $.ajax({
                 method: "GET",
@@ -478,7 +478,7 @@ function votesp(i){
         
     $.ajax({
         method: "GET",
-        url:  vote+""+i,
+        url:  votep+""+i,
         success: function(data) {
             $.ajax({
                 method: "GET",

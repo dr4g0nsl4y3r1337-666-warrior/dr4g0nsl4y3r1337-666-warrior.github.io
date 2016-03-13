@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../StyleSheets/reset.css">
+        <link rel="stylesheet" type="text/css" href="../StyleSheets/main.css">
+        <link rel="stylesheet" type="text/css" href="../StyleSheets/homePage.css">
+        <link rel="stylesheet" type="text/css" href="../StyleSheets/flip.css">
+        <script src="../JavaScript/IframeSize.js"></script>
+
+        <title>IN PROGRESS</title>
+    </head>
+    <body>
+        <header>
+            <ul id="topMenu">
+                <li id="mobileMenu"><a>Meny</a></li>
+                <li class="desctopMenu"><a href="../index.html">Hem</a></li>
+                <li class="desctopMenu"><a href="../yummies/yummies.html">Yummies</a></li>
+                <li onclick="setRandomLink();" class="desctopMenu"><a class="myRandomLink" href="#recipe">Dagens recept</a></li>
+                <li class="desctopMenu"><a class="active" href="top5.html">Top 5</a></li>
+                <li class="desctopMenu"><a href="../Contact/contact.html">Kontakt</a></li>
+            </ul>
+            <ul id="mobilePopUpMenu">
+                <li><a href="../index.html">Hem</a></li>
+                <li><a href="../yummies/yummies.html">Yummies</a></li>
+                <li onclick="setRandomLink();"><a class="myRandomLink" href="#recipe">Dagens recept</a></li>
+                <li><a class="active" href="top5.html">Top 5</a></li>
+                <li><a href="../Contact/contact.html">Kontakt</a></li>
+            </ul>
+        </header>
+        <div id = "mainContainer">   
+            <h1>Top 5</h1>
+            <!-- Top 1 -->
+            <iframe class="topRecipe" id="top1" src="topAnton.html" onload="resizeIframe(this)"></iframe>
+            <!-- Top 2 -->
+            <iframe class="topRecipe" id="top2" src="topJonas.html" onload="resizeIframe(this)"></iframe>
+            <!-- Top 3 -->
+            <iframe class="topRecipe" id="top3" src="topChristos.html" onload="resizeIframe(this)"></iframe>
+            <!-- Top 4 -->
+            <iframe class="topRecipe" id="top4" src="topJuan.html"onload="resizeIframe(this)"></iframe>
+            <!-- Top 5 -->
+            <iframe class="topRecipe" id="top5" src="topHenrik.html" onload="resizeIframe(this)"></iframe>
+            
+        </div>
+        <div id = "footer">
+            <footer>
+                <p>
+                    Jonas Malik
+                </p>
+            </footer>
+        </div>
+        <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="../JavaScript/menu.js"></script>
+        <script defer src="../JavaScript/recipeOfTheDay.js"></script>
+        
+
+    </body>
+</html>

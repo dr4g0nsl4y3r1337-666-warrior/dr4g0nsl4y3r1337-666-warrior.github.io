@@ -1,0 +1,26 @@
+body{
+    background-color: white;
+}
+
+#topContainer{
+    width: 100%;
+}
+
+#recipeImg{
+    width: 30%;
+    float: left;
+    border:0.3rem solid black;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    box-shadow: 0px 0px 10px 0px black;
+    -webkit-transform: rotate(-5deg);
+     -moz-transform: rotate(-5deg);
+       -o-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.star{
+    width: 10%;
+}
